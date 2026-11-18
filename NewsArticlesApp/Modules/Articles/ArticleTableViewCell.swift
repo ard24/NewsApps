@@ -66,7 +66,7 @@ final class ArticleTableViewCell: UITableViewCell {
     
     func configure(with article: Article) {
         titleLabel.text = article.title
-        subtitleLabel.text = article.description ?? "Klik untuk membaca selengkapnya"
+        subtitleLabel.text = article.description
         thumbnailImageView.image = UIImage(systemName: "newspaper")
         thumbnailImageView.tintColor = .tertiaryLabel
         

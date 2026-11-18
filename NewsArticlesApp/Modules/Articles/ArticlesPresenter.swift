@@ -78,8 +78,8 @@ final class ArticlesPresenter: ArticlesViewToPresenterProtocol, ArticlesInteract
             
             if self.articles.isEmpty {
                 let message = self.currentQuery.isEmpty
-                    ? "Belum ada artikel untuk \(self.source.name)."
-                    : "Tidak ada artikel yang cocok dengan \"\(self.currentQuery)\"."
+                    ? "Articles \(self.source.name) not found."
+                    : "Articles \(self.source.name) not found."
                 self.view?.showEmptyState(message)
             } else {
                 self.view?.showArticles(self.articles)

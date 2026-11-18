@@ -18,7 +18,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let rootModule = CategoriesRouter.createModule()
         let navigationController = UINavigationController(rootViewController: rootModule)
         
-        // Menggunakan title standar di tengah Navigation Bar
         navigationController.navigationBar.prefersLargeTitles = false
         
         window.rootViewController = navigationController

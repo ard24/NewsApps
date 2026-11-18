@@ -14,7 +14,7 @@ final class SourcesRouter: SourcesPresenterToRouterProtocol {
         let interactor = SourcesInteractor()
         let router = SourcesRouter()
         
-        view.navigationItem.title  = category.displayName
+        view.navigationItem.title  = category.displayName.uppercased()
         view.presenter = presenter
         presenter.view = view
         presenter.interactor = interactor

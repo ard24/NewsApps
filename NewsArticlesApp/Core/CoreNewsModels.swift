@@ -7,7 +7,6 @@
 
 import Foundation
 
-// MARK: - Penanganan Error (Kasus Negatif)
 enum NetworkError: LocalizedError, Equatable {
     case invalidURL
     case noData
@@ -24,7 +23,6 @@ enum NetworkError: LocalizedError, Equatable {
     }
 }
 
-// MARK: - Dynamic Query Parameters
 struct NewsRequestParams {
     var parameters: [String: String]
     
@@ -41,12 +39,11 @@ struct NewsRequestParams {
     }
 }
 
-// MARK: - Entities
 enum NewsCategory: String, CaseIterable {
     case business, entertainment, general, health, science, sports, technology
     
     var displayName: String {
-        rawValue.capitalized
+        rawValue
     }
 }
 
@@ -72,7 +69,6 @@ struct ArticleSource: Codable, Equatable {
     let name: String
 }
 
-// MARK: - Shared Network Manager
 protocol NewsAPIServiceProtocol {
     func request<T: Decodable>(endpoint: String, params: NewsRequestParams, completion: @escaping (Result<T, Error>) -> Void)
 }
