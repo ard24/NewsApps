@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  NewsArticlesApp
 //
-//  Created by MacBook on 18/11/26.
+//  Created by MacBook on 17/11/26.
 //
 
 import UIKit
