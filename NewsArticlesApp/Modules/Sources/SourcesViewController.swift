@@ -90,7 +90,7 @@ final class SourcesViewController: UIViewController, SourcesPresenterToViewProto
     }
     
     func showError(_ message: String) {
-        let alert = UIAlertController(title: "Something Wrong", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "Try Again", style: .default) { _ in self.presenter?.viewDidLoad() })
         alert.addAction(UIAlertAction(title: "Close", style: .cancel))
         present(alert, animated: true)

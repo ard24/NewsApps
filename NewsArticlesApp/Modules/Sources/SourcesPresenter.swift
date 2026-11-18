@@ -109,7 +109,7 @@ final class SourcesPresenter: SourcesViewToPresenterProtocol, SourcesInteractorT
             self.view?.showBottomSpinner(false)
             
             if isFirstPage {
-                self.view?.showEmptyState("Gagal memuat sumber berita.")
+                self.view?.showEmptyState("Articles is empty")
             }
             self.view?.showError(error.localizedDescription)
         }

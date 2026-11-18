@@ -91,7 +91,7 @@ final class ArticlesViewController: UIViewController, ArticlesPresenterToViewPro
     }
     
     func showError(_ message: String) {
-        let alert = UIAlertController(title: "Something Wrong", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default))
         present(alert, animated: true)
     }

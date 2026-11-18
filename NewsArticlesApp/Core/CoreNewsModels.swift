@@ -18,7 +18,7 @@ enum NetworkError: LocalizedError, Equatable {
         case .invalidURL: return "Invalid URL."
         case .noData: return "No data ."
         case .apiError(let message): return message
-        case .decodingError: return "Something wrong."
+        case .decodingError: return "Error"
         }
     }
 }

@@ -94,7 +94,7 @@ final class ArticlesPresenter: ArticlesViewToPresenterProtocol, ArticlesInteract
             self.view?.showBottomSpinner(false)
             
             if isFirstPage {
-                self.view?.showEmptyState("Gagal memuat artikel.")
+                self.view?.showEmptyState("Articles is empty")
             }
             self.view?.showError(error.localizedDescription)
         }
